@@ -47,10 +47,11 @@ export default $config({
 				handler: "bootstrap",
 				architecture: "arm64",
 				runtime: "provided.al2023",
-				bundle: path.join(process.cwd(), "target", "lambda", "lambda"),
+				bundle: cloudBuild.stdout.apply(() => path.join(process.cwd(), "target", "lambda", "lambda")),
 				memory: "128 MB",
 			},
 			{
+				// TODO: I think this is not working
 				dependsOn: [cloudBuild],
 			},
 		);

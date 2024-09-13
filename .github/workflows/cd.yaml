@@ -38,7 +38,7 @@ jobs:
       - name: Environment
         run: rustc -vV && rustup --version && node -v && pnpm -v
       
-      # TODO: This is a test
+      # TODO: This fixes it
       # - name: Prebuild
       #   run: ./.github/cl.sh build
       
