@@ -1,2 +1,3 @@
 # sst-gh-actions-debug
-It's no worky again
+
+Works fine on my machine but in CI it's failing. I'm soooo confused!
