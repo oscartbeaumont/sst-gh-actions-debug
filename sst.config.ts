@@ -40,7 +40,7 @@ export default $config({
 			},
 		);
 
-  new sst.aws.Function(
+  	new sst.aws.Function(
 			"cloud",
 			{
 	
