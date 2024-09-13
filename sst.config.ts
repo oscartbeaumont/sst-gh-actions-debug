@@ -43,17 +43,11 @@ export default $config({
   new sst.aws.Function(
 			"cloud",
 			{
-				...($dev
-					? {
-							runtime: "nodejs20.x",
-							handler: "apps/cloud/live.handler",
-						}
-					: {
-							handler: "bootstrap",
-							architecture: "arm64",
-							runtime: "provided.al2023",
-							bundle: path.join(process.cwd(), "target", "lambda", "lambda"),
-						}),
+	
+				handler: "bootstrap",
+				architecture: "arm64",
+				runtime: "provided.al2023",
+				bundle: path.join(process.cwd(), "target", "lambda", "lambda"),
 				memory: "128 MB",
 			},
 			{
