@@ -1,6 +1,7 @@
 /// <reference path="./.sst/platform/config.d.ts" />
 
 import path from "node:path";
+import crypto from "node:crypto";
 
 export default $config({
   app(input) {
