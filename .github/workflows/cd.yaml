@@ -39,8 +39,8 @@ jobs:
         run: rustc -vV && rustup --version && node -v && pnpm -v
       
       # TODO: This is a test
-      - name: Prebuild
-        run: ./.github/cl.sh build
+      # - name: Prebuild
+      #   run: ./.github/cl.sh build
       
       - name: SST
         run: pnpm sst deploy --stage prod
