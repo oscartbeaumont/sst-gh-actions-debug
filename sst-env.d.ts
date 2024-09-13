@@ -5,9 +5,5 @@ import "sst"
 export {}
 declare module "sst" {
   export interface Resource {
-    "cloud": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
   }
 }

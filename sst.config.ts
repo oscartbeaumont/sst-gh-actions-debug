@@ -8,7 +8,7 @@ export default $config({
     return {
       name: "sst-gh-actions-debug",
       removal: input?.stage === "production" ? "retain" : "remove",
-      home: "local",
+      home: "aws",
       providers: {
         aws: { region: "us-east-1" },
         command: true,
